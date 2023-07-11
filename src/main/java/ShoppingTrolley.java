@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingTrolley {
-    List<String> shoppingTrolley;
+    private List<String> shoppingTrolley;
 
     public ShoppingTrolley(){
         this.shoppingTrolley = new ArrayList<>();
