@@ -57,18 +57,20 @@ public class Runner {
         System.out.println("Running shopping trolley tasks...");
 
         // 1. Create a new shopping trolley
-//        ShoppingTrolley trolley = <INSTANTIATE A NEW SHOPPINGTROLLEY OBJECT HERE>;
+        ShoppingTrolley trolley = new ShoppingTrolley();
 
         // 2. Add an item to the trolley
-//        <CALL YOUR METHOD HERE>;
+        trolley.addItem("Milk");
+        trolley.addItem("Flour");
+        trolley.addItem("Eggs");
 
         // 3. Count items in the trolley
-//        int itemCount = <CALL YOUR METHOD HERE>;
-//        System.out.println("The trolley contains " + itemCount + " items.");
+        int itemCount = trolley.getTrolleySize();
+        System.out.println("The trolley contains " + itemCount + " items.");
 
         // 4. Check if an item is in the trolley
-//        boolean itemInTrolley = <CALL YOUR METHOD HERE>;
-//        System.out.println("Object is a square (true/false): " + itemInTrolley);
+        boolean itemInTrolley = trolley.inTrolley("Milk");
+        System.out.println("Object is in the trolley (true/false): " + itemInTrolley);
     }
 
 
